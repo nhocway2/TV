@@ -1,0 +1,94 @@
+body { background-color: #0d0d0d; color: #e0e0e0; font-family: Arial, sans-serif; margin:0; padding:0;}
+.hero { display:flex; justify-content:center; align-items:center; padding:80px 20px; background: linear-gradient(135deg,#0f0f0f,#111111); color:#fff;}
+.hero-content { display:flex; gap:60px; max-width:1200px; width:100%;}
+.hero-text h1 { font-size:3rem; font-weight:900; color:#39FF14;}
+.typewriter { font-size:1.5rem; color:#a0f; font-weight:600;}
+.hero-subtext { margin-top:20px; color:#ccc; max-width:500px;}
+.hero-buttons { margin-top:25px; display:flex; gap:15px;}
+.btn-neon { padding:12px 25px; color:#39FF14; border:2px solid #39FF14; font-weight:bold; text-decoration:none; transition:0.3s;}
+.btn-neon:hover { background:#39FF14; color:#000; box-shadow:0 0 20px #39FF14,0 0 40px #39FF14;}
+.btn-outline { padding:12px 25px; border:2px solid #a0f; color:#a0f; text-decoration:none; font-weight:bold; transition:0.3s;}
+.btn-outline:hover { background:#a0f; color:#000; box-shadow:0 0 20px #a0f,0 0 40px #a0f;}
+.hero-profile .profile-card { background:rgba(15,15,15,0.8); padding:20px; border-radius:20px; text-align:center; box-shadow:0 0 20px #39FF14;}
+.profile-card img { width:150px; height:150px; border-radius:50%; border:3px solid #39FF14;}
+.profile-highlights { margin-top:15px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center;}
+.profile-highlights span { background:#111111; padding:5px 12px; border-radius:15px; border:1px solid #a0f; font-size:0.85rem;}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #a0f; /* green accent */
+  font-size: 28px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column-reverse; /* Bottom to top */
+  gap: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-card {
+  background: #161b22;
+  border-left: 4px solid #39FF14;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+.timeline-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #39FF14;
+}
+
+.timeline-card span {
+  display: block;
+  font-size: 14px;
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+.timeline-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #c9d1d9;
+}
+
+/* Fancy arrow connector */
+.timeline-card::after {
+  content: "▲";
+  font-size: 22px;
+  color: #a0f;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+  animation: floatUp 2s infinite ease-in-out;
+}
+
+/* Remove arrow from the top-most card */
+.timeline-card:last-child::after {
+  display: none;
+}
+
+/* Animation for arrow */
+@keyframes floatUp {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-6px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+
+}
+

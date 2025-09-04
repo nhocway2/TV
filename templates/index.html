@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thuan Vo - Portfolio</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Keeping Millions of Streams Live, One Incident at a Time.</h1>
+      <p class="typewriter" id="typewriter"></p>
+      <p class="hero-subtext">
+        I lead incident response, automate critical workflows, and design observability pipelines that keep services live for millions of users worldwide. I support major streaming customers including NBC, Fox, inDemand, Viper, Starz Entertainment, FreeSpeechTV, Videotron, Amazon, and TVOne, ensuring live linear services like Virtual Channel, Linear Processing, and Linear Rights Management run flawlessly.
+      </p>
+      <div class="hero-buttons">
+        <a href="{{ url_for('resume') }}" class="btn-neon">Download Resume</a>
+        <a href="https://www.linkedin.com/in/thuanvvo/" target="_blank" class="btn-outline">LinkedIn</a>
+       <!-- <a href="" class="btn-outline">More</a> -->
+      </div>
+    </div>
+    <div class="hero-profile">
+      <div class="profile-card">
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Thuan Vo">
+        <div class="profile-highlights">
+          <span>⭐ WSO & Seattle World School Alumni Scholarship</span>
+           <span>🏅 UW Annual Dean's List 2017-2018</span>
+          <span>🏈 Seahawk & Bufallo <b> TRUE </b> fan</span>
+          <span>⚽ Soccer</span>
+           <span>🥾 Hiking</span>
+          <span>🎣 Fishing</span>
+          <span>⛺ Camping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <h2>My Career & Education</h2>
+
+  <div class="timeline">
+    <!-- Education first (bottom) -->
+    <div class="timeline-card">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <span>University of Washington | Graduated in 2018</span>
+    </div>
+
+    <!-- First job -->
+    <div class="timeline-card">
+      <h3>IT Consultant</h3>
+      <span>Making A Difference Foundation | 2017 - 2018</span>
+    </div>
+
+    <!-- Current job -->
+    <div class="timeline-card">
+      <h3>Application Support Engineer (Cloud Video Platform Services)</h3>
+      <span>Comcast Technology Solutions | 2018 - 2020</span>
+    </div>
+
+    <div class="timeline-card">
+      <h3>Live Linear Support Engineer | Subject Matter Expert</h3>
+      <span>Comcast Technology Solutions | 2021 - Present</span>
+    </div>
+    <div class="timeline-card">
+        <h3>On Call Incident Manager</h3>
+        <span>Comcast Technology Solutions | 2025 - Present</span>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
