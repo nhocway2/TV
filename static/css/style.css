@@ -1,7 +1,7 @@
 body { background-color: #0d0d0d; color: #e0e0e0; font-family: Arial, sans-serif; margin:0; padding:0;}
 .hero { display:flex; justify-content:center; align-items:center; padding:20px 20px; background: linear-gradient(135deg,#0f0f0f,#111111); color:#fff;}
 .hero-content { display:flex; gap:60px; max-width:1200px; width:100%;}
-.hero-text h1 { font-size:3rem; font-weight:900; color:#39FF14;}
+.hero-text h1 { font-size:2rem; font-weight:900; color:#39FF14;}
 .typewriter { font-size:1.5rem; color:#a0f; font-weight:600;}
 .hero-subtext { margin-top:20px; color:#ccc; max-width:500px;}
 .hero-buttons { margin-top:25px; display:flex; gap:15px;}
@@ -90,6 +90,7 @@ h2 {
 }
 
 /* Skills */
+/* Skills */
 .workflow-container {
   display: none;
   margin: 50px auto;
@@ -105,26 +106,10 @@ h2 {
   box-sizing: border-box;
 }
 
-.workflow-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* center titles and details under icons */
-  text-align: center;
-  margin-left: 0;       /* remove left margin for centering */
-}
-
-.workflow-title {
-  font-size: 1rem;
+.workflow-description {
+  color: #a0f;
+  font-size: 18px;
   font-weight: bold;
-  margin: 0;
-  color: #39FF14;
-}
-
-.workflow-details {
-  font-size: 0.85rem;
-  color: #ccc;
-  margin: 4px 0 0 0;
-  line-height: 1.4;
 }
 
 .workflow-step {
@@ -143,11 +128,7 @@ h2 {
   transition: all 0.5s ease-in-out;
   flex-wrap: wrap; /* wrap icons/text on small screens */
 }
-.workflow-description {
-	color: #a0f;
-	font-size: 18px;
-	font-weight: bold;
-}
+
 .workflow-step img.workflow-icon {
   width: 40px;
   height: 40px;
@@ -162,6 +143,28 @@ h2 {
   font-size: 30px;
 }
 
+.workflow-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 0;
+}
+
+.workflow-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #39FF14;
+}
+
+.workflow-details {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
 .step-1 { border-color: #4A154B; }
 .step-2 { border-color: #0078D7; }
 .step-3 { border-color: #007A33; }
@@ -172,27 +175,24 @@ h2 {
   to { opacity: 1; transform: translateX(0); }
 }
 
-/* Mobile responsiveness */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
-  .workflow-container {
-    width: 95%;
-    padding: 20px;
-    font-size: 0.95rem;
-  }
-
   .workflow-step {
-    flex-direction: column;   /* stack icon above text */
-    align-items: center;      /* center content */
+    flex-direction: column; /* stack icons/text */
+    align-items: center;
     text-align: center;
   }
 
   .workflow-step img.workflow-icon {
+    width: 28px;
+    height: 28px;
     margin-right: 0;
     margin-bottom: 8px;
   }
 
   .icon-separator {
-    display: none;  /* optional: hide slashes on mobile to save space */
+    font-size: 18px; /* smaller slash */
+    margin: 0 4px;
   }
 }
 
