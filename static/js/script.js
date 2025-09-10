@@ -42,3 +42,21 @@ typeWriter();
 
 
 
+// Show/hide workflow on button click
+const skillsBtn = document.getElementById('skills-btn');
+const workflowContainer = document.getElementById('workflow-container');
+
+skillsBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  workflowContainer.style.display = workflowContainer.style.display === 'block' ? 'none' : 'block';
+
+  const steps = workflowContainer.querySelectorAll('.workflow-step');
+  steps.forEach((step, index) => {
+    step.style.opacity = '0';
+    step.style.animation = `slideIn 0.5s forwards`;
+    step.style.animationDelay = `${index * 0.5}s`;
+  });
+});
+
+
+

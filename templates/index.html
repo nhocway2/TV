@@ -20,8 +20,9 @@
       <div class="hero-buttons">
         <a href="{{ url_for('resume') }}" class="btn-neon">Download Resume</a>
         <a href="https://www.linkedin.com/in/thuanvvo/" target="_blank" class="btn-outline">LinkedIn</a>
-       <!-- <a href="" class="btn-outline">More</a> -->
+       <a href="#" id="skills-btn" class="btn-outline">Skills</a>
       </div>
+
     </div>
     <div class="hero-profile">
       <div class="profile-card">
@@ -39,6 +40,62 @@
     </div>
   </div>
 </section>
+
+
+      <!-- Workflow animation section (hidden by default) -->
+<div id="workflow-container" class="workflow-container">
+  <!-- Description -->
+  <p class="workflow-description">
+    Interactive Workflow Automations
+  </p>
+ <div class="workflow-step slack">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" class="workflow-icon" />  
+  <span class="icon-separator">/</span>
+  <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" class="workflow-icon" />
+  <span class="icon-separator">/</span>
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">Interactive Slack Workflow Automation</p>
+    <p class="workflow-details">
+      Slack Command Initiated ⇒ Power Automate Flow Activated ⇒ SharePoint Data Retrieved ⇒ Slack Notified with Results
+    </p>
+  </div>
+</div>
+
+
+  <div class="workflow-step alert">
+    <img src="{{ url_for('static', filename='img/splunk.png') }}" class="workflow-icon" />  
+  <span class="icon-separator">/</span>
+  <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
+  <span class="icon-separator">/</span>
+  <img src="{{ url_for('static', filename='img/alert.jpeg') }}" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">Splunk–DataDog-Zenoss Alert Integration Workflow</p>
+    <p class="workflow-details">
+       Splunk alert configured ⇒ Alert triggers automatically ⇒ Data sent to DataDog ⇒ Zenoss updates dashboard
+    </p>
+  </div>
+  </div>
+
+
+
+ <div class="workflow-step alert">
+    <img src="{{ url_for('static', filename='img/touchstream.png') }}" class="workflow-icon" />  
+  <span class="icon-separator">/</span>
+  <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
+  <span class="icon-separator">/</span>
+  <img src="{{ url_for('static', filename='img/alert.jpeg') }}" class="workflow-icon" />
+  <span class="icon-separator">/</span>
+  <img src="{{ url_for('static', filename='img/pd.png') }}" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">End-to-End Stream Monitoring & Alert Automation</p>
+    <p class="workflow-details">
+       Configure stream in Touchstream ⇒ Touchstream monitors stream and sends metrics to DataDog ⇒ DataDog triggers Zenoss alert ⇒ Zenoss notifies PagerDuty
+    </p>
+  </div>
+  </div>
+</div>
+ 
 
   <h2>My Career & Education</h2>
 

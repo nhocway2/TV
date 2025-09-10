@@ -89,6 +89,105 @@ h2 {
   100% { transform: translateX(-50%) translateY(0); }
 }
 
+/* Skills */
+/* Skills */
+.workflow-container {
+  display: none; /* hidden by default */
+  margin: 50px auto;
+  padding: 25px;
+  width: fit-content; /* expand automatically based on content */
+  max-width: 90%; /* keep it from overflowing small screens */
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Ensure text wraps nicely on small screens */
+@media (max-width: 768px) {
+  .workflow-container {
+    width: 95%; /* take almost full width on small screens */
+    font-size: 0.95rem;
+    padding: 20px;
+  }
+}
+/* Workflow content styling */
+.workflow-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left-align text inside */
+  margin-left: 10px; /* spacing from icons */
+}
+
+.workflow-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #39FF14;
+}
+
+.workflow-details {
+  font-size: 0.85rem; /* smaller text */
+  color: #ccc;
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+
+.workflow-description {
+  color: #a0f;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* icon + text */
+  opacity: 0;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  border-left: 6px solid #00ff99; /* default border color */
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  background: #2a2a2a;
+  font-family: "Segoe UI", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.workflow-step img.workflow-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.icon-separator {
+  margin: 0 6px;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 30px;
+   margin-right: 12px;
+}
+
+
+/* Optional: different colors per step */
+.step-1 { border-color: #4A154B; }
+.step-2 { border-color: #0078D7; }
+.step-3 { border-color: #007A33; }
+.step-4 { border-color: #00FF99; }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
 
 }
 
