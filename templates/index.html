@@ -1,119 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thuan Vo - Portfolio</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thuan Vo - Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<section class="hero">
- <div class="hero-profile">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-profile">
       <div class="profile-card">
         <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Thuan Vo">
         <div class="profile-highlights">
           <span>⭐ WSO & Seattle World School Alumni Scholarship</span>
-           <span>🏅 UW Annual Dean's List 2017-2018</span>
-          <span>🏈 Seahawk & Bufallo <b> TRUE </b> fan</span>
-          <span>⚽ Soccer</span>
-           <span>🥾 Hiking</span>
-          <span>🎣 Fishing</span>
-          <span>⛺ Camping</span>
+          <span>🏅 UW Annual Dean's List 2017-2018</span>
+          <span>🏈 Seahawk & Bufallo <b>TRUE</b> fan</span>
+          <span>🥾/🎣 /⛺ Outdoor Activities</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="hero">
+  </section>
 
-  <div class="hero-content">
-
-    <div class="hero-text">
-      <h1>Keeping Millions of Streams Live, One Incident at a Time.</h1>
-      <p class="typewriter" id="typewriter"></p>
-      <p class="hero-subtext">
-        I lead incident response, automate critical workflows, and design observability pipelines that keep services live for millions of users worldwide. I support major streaming customers including NBC, Fox, inDemand, Viper, Starz Entertainment, FreeSpeechTV, Videotron, Amazon, and TVOne, ensuring live linear services like Virtual Channel, Linear Processing, and Linear Rights Management run flawlessly.
-      </p>
-      <div class="hero-buttons">
-        <a href="{{ url_for('resume') }}" class="btn-neon">Download Resume</a>
-        <a href="https://www.linkedin.com/in/thuanvvo/" target="_blank" class="btn-outline">LinkedIn</a>
-       <a href="#" id="skills-btn" class="btn-outline">Skills</a>
+  <!-- Hero Content -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Keeping Millions of Streams Live, One Incident at a Time.</h1>
+        <p class="typewriter" id="typewriter"></p>
+        <p class="hero-subtext">
+          I lead incident response, automate critical workflows, and design observability pipelines that keep services live for millions of users worldwide. I support major streaming customers including NBC, Fox, inDemand, Viper, Starz Entertainment, FreeSpeechTV, Videotron, Amazon, and TVOne, ensuring live linear services like Virtual Channel, Linear Processing, and Linear Rights Management run flawlessly.
+        </p>
+        <div class="hero-buttons">
+          <a href="{{ url_for('resume') }}" class="btn-neon">Resume</a>
+          <a href="https://www.linkedin.com/in/thuanvvo/" target="_blank" class="btn-outline">LinkedIn</a>
+          <a href="#" id="skills-btn" class="btn-outline">Automations</a>
+        </div>
       </div>
-
     </div>
-   
-</section>
+  </section>
 
-
-      <!-- Workflow animation section (hidden by default) -->
+  <!-- Workflow Animation Section -->
 <div id="workflow-container" class="workflow-container">
-  <!-- Description -->
-  <p class="workflow-description">
-    Interactive Workflow Automations
-  </p>
- <div class="workflow-step slack">
-  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" class="workflow-icon" />  
-  <span class="icon-separator">/</span>
-  <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" class="workflow-icon" />
-  <span class="icon-separator">/</span>
-  <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" class="workflow-icon" />
-  <div class="workflow-content">
-    <p class="workflow-title">Interactive Slack Workflow Automation</p>
-    <p class="workflow-details">
-      Slack Command Initiated ⇒ Power Automate Flow Activated ⇒ SharePoint Data Retrieved ⇒ Slack Notified with Results
-    </p>
+  <p class="workflow-description">Interactive Workflow Automations</p>
+
+  <!-- Slack Workflow -->
+  <div class="workflow-step">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" class="workflow-icon" />
+    <span class="icon-separator">/</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" class="workflow-icon" />
+    <span class="icon-separator">/</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" class="workflow-icon" />
+
+    <div class="workflow-content">
+      <p class="workflow-title">Interactive Slack Workflow Automation</p>
+      <p class="workflow-details">
+        Slack Command Initiated ⇒ Power Automate Flow Activated ⇒ SharePoint Data Retrieved ⇒ Slack Notified with Results
+      </p>
+    </div>
+  </div>
+
+  <!-- Splunk-DataDog-Zenoss Workflow -->
+  <div class="workflow-step">
+    <img src="{{ url_for('static', filename='img/splunk.png') }}" class="workflow-icon" />
+    <span class="icon-separator">/</span>
+    <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
+    <span class="icon-separator">/</span>
+    <img src="{{ url_for('static', filename='img/alert.jpeg') }}" class="workflow-icon" />
+
+    <div class="workflow-content">
+      <p class="workflow-title">Splunk–DataDog–Zenoss Alert Integration Workflow</p>
+      <p class="workflow-details">
+        Splunk alert configured ⇒ Alert triggers automatically ⇒ Data sent to DataDog ⇒ Zenoss updates dashboard
+      </p>
+    </div>
+  </div>
+
+  <!-- Touchstream Monitoring Workflow -->
+  <div class="workflow-step">
+    <img src="{{ url_for('static', filename='img/touchstream.png') }}" class="workflow-icon" />
+    <span class="icon-separator">/</span>
+    <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
+    <span class="icon-separator">/</span>
+    <img src="{{ url_for('static', filename='img/pd.png') }}" class="workflow-icon" />
+
+    <div class="workflow-content">
+      <p class="workflow-title">End-to-End Stream Monitoring & Alert Automation</p>
+      <p class="workflow-details">
+        Configure stream in Touchstream ⇒ Touchstream monitors stream and sends metrics to DataDog ⇒ DataDog triggers Zenoss alert ⇒ Zenoss notifies PagerDuty
+      </p>
+    </div>
   </div>
 </div>
 
 
-  <div class="workflow-step alert">
-    <img src="{{ url_for('static', filename='img/splunk.png') }}" class="workflow-icon" />  
-  <span class="icon-separator">/</span>
-  <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
-  <span class="icon-separator">/</span>
-  <img src="{{ url_for('static', filename='img/alert.jpeg') }}" class="workflow-icon" />
-  <div class="workflow-content">
-    <p class="workflow-title">Splunk–DataDog-Zenoss Alert Integration Workflow</p>
-    <p class="workflow-details">
-       Splunk alert configured ⇒ Alert triggers automatically ⇒ Data sent to DataDog ⇒ Zenoss updates dashboard
-    </p>
-  </div>
-  </div>
-
-
-
- <div class="workflow-step alert">
-    <img src="{{ url_for('static', filename='img/touchstream.png') }}" class="workflow-icon" />  
-  <span class="icon-separator">/</span>
-  <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
-  <span class="icon-separator">/</span>
-  <img src="{{ url_for('static', filename='img/pd.png') }}" class="workflow-icon" />
-  <div class="workflow-content">
-    <p class="workflow-title">End-to-End Stream Monitoring & Alert Automation</p>
-    <p class="workflow-details">
-       Configure stream in Touchstream ⇒ Touchstream monitors stream and sends metrics to DataDog ⇒ DataDog triggers Zenoss alert ⇒ Zenoss notifies PagerDuty
-    </p>
-  </div>
-  </div>
-</div>
- 
-
+  <!-- Career & Education Section -->
   <h2>My Career & Education</h2>
-
   <div class="timeline">
-    <!-- Education first (bottom) -->
     <div class="timeline-card">
       <h3>Bachelor of Science in Information Technology</h3>
       <span>University of Washington | Graduated in 2018</span>
     </div>
 
-    <!-- First job -->
     <div class="timeline-card">
       <h3>IT Consultant</h3>
       <span>Making A Difference Foundation | 2017 - 2018</span>
     </div>
 
-    <!-- Current job -->
     <div class="timeline-card">
       <h3>Application Support Engineer (Cloud Video Platform Services)</h3>
       <span>Comcast Technology Solutions | 2018 - 2020</span>
@@ -123,11 +117,13 @@
       <h3>Live Linear Support Engineer | Subject Matter Expert</h3>
       <span>Comcast Technology Solutions | 2021 - Present</span>
     </div>
+
     <div class="timeline-card">
-        <h3>On Call Incident Manager</h3>
-        <span>Comcast Technology Solutions | 2025 - Present</span>
+      <h3>On Call Incident Manager</h3>
+      <span>Comcast Technology Solutions | 2025 - Present</span>
     </div>
-</div>
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
