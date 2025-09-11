@@ -45,14 +45,14 @@ body {
 }
 
 .hero-buttons {
-  margin-top: 25px;
+  margin-top: 20px;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap; /* allow buttons to wrap on mobile */
 }
 
 .btn-neon {
-  padding: 12px 25px;
+  padding: 10px 10px;
   color: #39FF14;
   border: 2px solid #39FF14;
   font-weight: bold;
@@ -62,12 +62,12 @@ body {
 
 .btn-neon:hover {
   background: #39FF14;
-  color: #000;
+  color: #FFFFFF;
   box-shadow: 0 0 20px #39FF14, 0 0 40px #39FF14;
 }
 
 .btn-outline {
-  padding: 12px 25px;
+  padding: 12px 12px;
   border: 2px solid #a0f;
   color: #a0f;
   text-decoration: none;
@@ -77,7 +77,7 @@ body {
 
 .btn-outline:hover {
   background: #a0f;
-  color: #000;
+  color: #FFFFFF;
   box-shadow: 0 0 20px #a0f, 0 0 40px #a0f;
 }
 
@@ -155,14 +155,14 @@ h2 {
 .timeline-card span {
   display: block;
   font-size: 14px;
-  color: #8b949e;
+  color: #FFFFFF;
   margin-bottom: 10px;
 }
 
 .timeline-card p {
   margin: 0;
   font-size: 15px;
-  color: #c9d1d9;
+  color: #FFFFFF;
 }
 
 /* Fancy arrow connector */
@@ -212,7 +212,7 @@ h2 {
 
 .workflow-step {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: flex-start;
   opacity: 0;
   margin-bottom: 15px;
@@ -234,20 +234,14 @@ h2 {
   margin-bottom: 6px;
 }
 
-.icon-separator {
-  margin: 0 6px;
-  color: #a0f;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 .workflow-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; 
+  text-align: left;       
   margin-left: 0;
 }
+
 
 .workflow-title {
   font-size: 1rem;
@@ -258,7 +252,7 @@ h2 {
 
 .workflow-details {
   font-size: 0.85rem;
-  color: #ccc;
+  color: #FFFFFF;
   margin: 4px 0 0 0;
   line-height: 1.4;
 }
@@ -294,6 +288,7 @@ h2 {
   .hero-subtext {
     max-width: 90%;
     font-size: 0.95rem;
+    text-align: left;    
   }
 
   .hero-buttons {
