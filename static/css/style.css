@@ -1,40 +1,141 @@
-body { background-color: #0d0d0d; color: #e0e0e0; font-family: Arial, sans-serif; margin:0; padding:0;}
-.hero { display:flex; justify-content:center; align-items:center; padding:20px 20px; background: linear-gradient(135deg,#0f0f0f,#111111); color:#fff;}
-.hero-content { display:flex; gap:60px; max-width:1200px; width:100%;}
-.hero-text h1 { font-size:2rem; font-weight:900; color:#39FF14;}
-.typewriter { font-size:1.5rem; color:#a0f; font-weight:600;}
-.hero-subtext { margin-top:20px; color:#ccc; max-width:500px;}
-.hero-buttons { margin-top:25px; display:flex; gap:15px;}
-.btn-neon { padding:12px 25px; color:#39FF14; border:2px solid #39FF14; font-weight:bold; text-decoration:none; transition:0.3s;}
-.btn-neon:hover { background:#39FF14; color:#000; box-shadow:0 0 20px #39FF14,0 0 40px #39FF14;}
-.btn-outline { padding:12px 25px; border:2px solid #a0f; color:#a0f; text-decoration:none; font-weight:bold; transition:0.3s;}
-.btn-outline:hover { background:#a0f; color:#000; box-shadow:0 0 20px #a0f,0 0 40px #a0f;}
-.hero-profile .profile-card { background:rgba(15,15,15,0.8); padding:20px; border-radius:20px; text-align:center; box-shadow:0 0 20px #39FF14;}
-.profile-card img { width:150px; height:150px; border-radius:50%; border:3px solid #39FF14;}
-.profile-highlights { margin-top:15px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center;}
-.profile-highlights span { background:#111111; padding:5px 12px; border-radius:15px; border:1px solid #a0f; font-size:0.85rem;}
+/* ===== BASE STYLES ===== */
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+/* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f0f0f, #111111);
+  color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap; /* added to prevent overflow */
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #39FF14;
+}
+
+.typewriter {
+  font-size: 1.5rem;
+  color: #a0f;
+  font-weight: 600;
+}
+
+.hero-subtext {
+  margin-top: 20px;
+  color: #ccc;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* allow buttons to wrap on mobile */
+}
+
+.btn-neon {
+  padding: 12px 25px;
+  color: #39FF14;
+  border: 2px solid #39FF14;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-neon:hover {
+  background: #39FF14;
+  color: #000;
+  box-shadow: 0 0 20px #39FF14, 0 0 40px #39FF14;
+}
+
+.btn-outline {
+  padding: 12px 25px;
+  border: 2px solid #a0f;
+  color: #a0f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #a0f;
+  color: #000;
+  box-shadow: 0 0 20px #a0f, 0 0 40px #a0f;
+}
+
+/* ===== PROFILE CARD ===== */
+.hero-profile .profile-card {
+  background: rgba(15, 15, 15, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px #39FF14;
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #39FF14;
+}
+
+.profile-highlights {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.profile-highlights span {
+  background: #111111;
+  padding: 5px 12px;
+  border-radius: 15px;
+  border: 1px solid #a0f;
+  font-size: 0.85rem;
+}
+
+/* ===== TIMELINE ===== */
 h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #a0f; /* green accent */
+  color: #a0f;
   font-size: 28px;
 }
 
 .timeline {
   display: flex;
-  flex-direction: column-reverse; /* Bottom to top */
+  flex-direction: column-reverse;
   gap: 40px;
   max-width: 700px;
   margin: 0 auto;
   position: relative;
+  padding: 0 20px; /* added padding for mobile safety */
 }
 
 .timeline-card {
   background: #161b22;
   border-left: 4px solid #39FF14;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   padding: 20px;
   position: relative;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -42,7 +143,7 @@ h2 {
 
 .timeline-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
 
 .timeline-card h3 {
@@ -77,26 +178,23 @@ h2 {
   animation: floatUp 2s infinite ease-in-out;
 }
 
-/* Remove arrow from the top-most card */
 .timeline-card:last-child::after {
   display: none;
 }
 
-/* Animation for arrow */
 @keyframes floatUp {
-  0% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-6px); }
+  0%   { transform: translateX(-50%) translateY(0); }
+  50%  { transform: translateX(-50%) translateY(-6px); }
   100% { transform: translateX(-50%) translateY(0); }
 }
 
-/* Skills */
-/* Skills */
+/* ===== WORKFLOW ===== */
 .workflow-container {
   display: none;
   margin: 50px auto;
   padding: 25px;
-  width: auto;           /* auto-expand based on content */
-  max-width: 90%;        /* limit on small screens */
+  width: auto;
+  max-width: 90%;
   background-color: #1e1e1e;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
@@ -119,14 +217,14 @@ h2 {
   opacity: 0;
   margin-bottom: 15px;
   padding: 12px 20px;
-  border-left: 6px solid #00ff99;
+  border-left: 6px solid #39FF14;
   border-radius: 6px;
   font-weight: bold;
   color: #fff;
   background: #2a2a2a;
   font-family: "Segoe UI", sans-serif;
   transition: all 0.5s ease-in-out;
-  flex-wrap: wrap; /* wrap icons/text on small screens */
+  flex-wrap: wrap;
 }
 
 .workflow-step img.workflow-icon {
@@ -172,13 +270,54 @@ h2 {
 
 @keyframes slideIn {
   from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
-/* MOBILE RESPONSIVENESS */
+/* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 768px) {
+  /* Hero Section */
+  .hero-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+
+  .hero-subtext {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Profile Card */
+  .hero-profile .profile-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding: 0 15px;
+  }
+
+  .timeline-card h3 {
+    font-size: 18px;
+  }
+
+  /* Workflow Steps */
   .workflow-step {
-    flex-direction: column; /* stack icons/text */
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -189,13 +328,4 @@ h2 {
     margin-right: 0;
     margin-bottom: 8px;
   }
-
-  .icon-separator {
-    font-size: 18px; /* smaller slash */
-    margin: 0 4px;
-  }
 }
-
-
-}
-
