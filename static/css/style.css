@@ -312,15 +312,21 @@ h2 {
 
   /* Workflow Steps */
   .workflow-step {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;       /* keep horizontal */
+    align-items: center;       /* center vertically */
+    text-align: left;
+    flex-wrap: wrap;           /* allow text to wrap to next line */
   }
 
   .workflow-step img.workflow-icon {
     width: 28px;
     height: 28px;
-    margin-right: 0;
-    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-bottom: 4px;       /* small spacing if wrapped */
+  }
+
+  .workflow-content {
+    align-items: flex-start;  /* keep text left-aligned */
+    text-align: left;
   }
 }
