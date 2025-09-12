@@ -54,8 +54,8 @@ skillsBtn.addEventListener('click', (e) => {
   const steps = workflowContainer.querySelectorAll('.workflow-step');
   steps.forEach((step, index) => {
     step.style.opacity = '0';
-    step.style.animation = `slideIn 1.5s forwards`;
-    step.style.animationDelay = `${index * 1.5}s`;
+    step.style.animation = `slideIn 1s forwards`;
+    step.style.animationDelay = `${index * 1}s`;
   });
 });
 

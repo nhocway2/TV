@@ -34,7 +34,7 @@
         <div class="hero-buttons">
           <a href="{{ url_for('resume') }}" class="btn-neon">Resume</a>
           <a href="https://www.linkedin.com/in/thuanvvo/" target="_blank" class="btn-outline">LinkedIn</a>
-          <a href="#" id="skills-btn" class="btn-outline">Automations</a>
+          <a href="#" id="skills-btn" class="btn-outline">What I Do</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
 
   <!-- Workflow Animation Section -->
 <div id="workflow-container" class="workflow-container">
-  <p class="workflow-description">Interactive Workflow Automations</p>
+  <p class="workflow-description">Impact in Action</p>
 
   <!-- Slack Workflow -->
   <div class="workflow-step">
@@ -96,6 +96,19 @@
   </div>
 </div>
 
+<!-- Change Control / Deployment Workflow -->
+<div class="workflow-step">
+  <img src="{{ url_for('static', filename='img/deploy.png') }}" class="workflow-icon" />
+  <img src="{{ url_for('static', filename='img/notifications.png') }}" class="workflow-icon" />
+     <img src="{{ url_for('static', filename='img/servicenow.png') }}" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">Change Control & Deployment</p>
+    <p class="workflow-details">
+      Review planned deployment or maintenance ⇒ Ensure it falls within allowed windows <br> ⇒ Create change ticket ⇒ Notify customers via an automated email notifications rule
+    </p>
+  </div>
+</div>
+
 <!-- ServiceNow to Slack Integration -->
 <div class="workflow-step">
   <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" class="workflow-icon" />
@@ -107,6 +120,20 @@
     </p>
   </div>
 </div>
+
+<!-- Ticket Handling / Escalation Workflow -->
+<div class="workflow-step">
+  <img src="{{ url_for('static', filename='img/troubleshooting.jpeg') }}" class="workflow-icon" />
+  <img src="{{ url_for('static', filename='img/teamwork.png') }}" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">Ticket Handling & Escalation</p>
+    <p class="workflow-details">
+      Receive escalation from Tier 1 ⇒ Investigate & troubleshoot ⇒ Collaborate with internal/external teams if needed <br>⇒ Resolve issue ⇒ Document resolution & implement preventive measures
+    </p>
+  </div>
+</div>
+
+
 
 
 
