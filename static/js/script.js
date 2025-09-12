@@ -1,14 +1,15 @@
 const titles = [
   "Automating the Impossible, Daily.",
-  "Downtime’s Worst Nightmare.",
+  "Critical Escalations. Fast. Reliable.",
   "Turning Alerts into Automation.",
-  "Your last line of defense when servers panic."
+  "Your last line of defense when customers panic.",
+  "Connecting People. Aligning Priorities. Delivering Success."
 ];
 
 let currentIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const typeSpeed = 80;
+const typeSpeed = 100;
 const deleteSpeed = 40;
 const pauseEnd = 1000; // pause at end of sentence
 const typewriterElement = document.getElementById("typewriter");
@@ -53,10 +54,8 @@ skillsBtn.addEventListener('click', (e) => {
   const steps = workflowContainer.querySelectorAll('.workflow-step');
   steps.forEach((step, index) => {
     step.style.opacity = '0';
-    step.style.animation = `slideIn 0.5s forwards`;
-    step.style.animationDelay = `${index * 0.5}s`;
+    step.style.animation = `slideIn 1.5s forwards`;
+    step.style.animationDelay = `${index * 1.5}s`;
   });
 });
-
-
 

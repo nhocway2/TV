@@ -6,6 +6,10 @@ body {
   margin: 0;
   padding: 0;
 }
+a.email-link {
+  color: #ffffff; /* white text */
+  text-decoration: none; /* optional: remove underline */
+}
 
 /* ===== HERO SECTION ===== */
 .hero {
@@ -19,20 +23,20 @@ body {
 
 .hero-content {
   display: flex;
-  gap: 60px;
+  gap: 40px;
   max-width: 1200px;
   width: 100%;
   flex-wrap: wrap; /* added to prevent overflow */
 }
 
 .hero-text h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #39FF14;
 }
 
 .typewriter {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #a0f;
   font-weight: 600;
 }
@@ -118,7 +122,7 @@ h2 {
   text-align: center;
   margin-bottom: 30px;
   color: #a0f;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .timeline {
@@ -329,4 +333,5 @@ h2 {
     align-items: flex-start;  /* keep text left-aligned */
     text-align: left;
   }
-}
+
+

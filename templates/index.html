@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thuan Vo - Portfolio</title>
+  <title>Thuan Vo</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -14,7 +14,8 @@
       <div class="profile-card">
         <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Thuan Vo">
         <div class="profile-highlights">
-          <span>⭐ WSO & Seattle World School Alumni Scholarship</span>
+          <span>📍  Seattle, WA |  <a class="email-link" href="mailto:nhocwaya2@gmail.com" target="_blank" aria-label="Send me an email" >✉️  Email</a> </span>
+          <span>⭐ WSO & SWS Alumni Scholarships</span>
           <span>🏅 UW Annual Dean's List 2017-2018</span>
         </div>
       </div>
@@ -25,7 +26,7 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Keeping Millions of Streams Live, One Incident at a Time.</h1>
+        <h1>Ensuring Continuous Delivery for Live Linear Services, Every Second Counts.</h1>
         <p class="typewriter" id="typewriter"></p>
         <p class="hero-subtext">
           I lead incident response, automate workflows, and design observability pipelines to keep services running for millions of users. As a subject matter expert for Virtual Channel, Linear Processing, and Linear Rights Management, I ensure flawless live linear services, manage on-call incidents to minimize impact, and collaborate with engineering, product, and account teams to deliver new features and workflows.
@@ -49,7 +50,7 @@
     <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" class="workflow-icon" />
     <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" class="workflow-icon" />
     <div class="workflow-content">
-      <p class="workflow-title">Slack Search</p>
+      <p class="workflow-title">Slack Search Intergation</p>
       <p class="workflow-details">
         Slack Command Initiated ⇒ Power Automate Flow Activated ⇒ SharePoint Data Retrieved ⇒ Slack Notified with Results
       </p>
@@ -81,11 +82,39 @@
       </p>
     </div>
   </div>
+
+ <!-- Cloudwatch Workflow -->
+<div class="workflow-step">
+  <img src="{{ url_for('static', filename='img/aws.png') }}" class="workflow-icon" />
+  <img src="{{ url_for('static', filename='img/datadog.png') }}" class="workflow-icon" />
+  <img src="{{ url_for('static', filename='img/alert.jpeg') }}" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">Cloudwatch Alert Setup</p>
+    <p class="workflow-details">
+      Cloudwatch alert configured ⇒ Alert triggers to DataDog ⇒ DataDog sends notification to Zenoss
+    </p>
+  </div>
+</div>
+
+<!-- ServiceNow to Slack Integration -->
+<div class="workflow-step">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" class="workflow-icon" />
+  <img src="{{ url_for('static', filename='img/servicenow.png') }}" class="workflow-icon" />
+  <div class="workflow-content">
+    <p class="workflow-title">ServiceNow to Slack Integration</p>
+    <p class="workflow-details">
+      Ticket submitted in ServiceNow ⇒ Criteria met ⇒ Notification posted to Slack channel
+    </p>
+  </div>
+</div>
+
+
+
 </div>
 
 
   <!-- Career & Education Section -->
-  <h2>My Career Path</h2>
+  <h2>Career Path</h2>
   <div class="timeline">
     <div class="timeline-card">
       <h3>Bachelor of Science in Information Technology</h3>
@@ -114,5 +143,6 @@
   </div>
 
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
 </html>
