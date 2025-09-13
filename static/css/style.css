@@ -1,6 +1,6 @@
 /* ===== BASE STYLES ===== */
 body {
- background: linear-gradient(135deg, #0f0f0f, #0A192F);
+  background: linear-gradient(135deg, #0f0f0f, #0A192F);
   color: #e0e0e0;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -139,7 +139,7 @@ h2 {
   background: linear-gradient(135deg, #1E40AF, #5B21B6);
   border-left: 5px solid #a0f;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px #3B82F6, 0 0 40px #8B5CF6;
   padding: 20px;
   position: relative;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -173,7 +173,7 @@ h2 {
 .timeline-card::after {
   content: "▲";
   font-size: 22px;
-  color: #a0f;
+  color: #ffffff;
   position: absolute;
   top: -30px;
   left: 50%;
@@ -195,14 +195,17 @@ h2 {
 /* ===== WORKFLOW ===== */
 .workflow-container {
   display: none;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 25px;
   width: auto;
   max-width: 90%;
-  background: linear-gradient(135deg, #F3E8FF, #E0F2FE);
+  box-shadow: 
+  0 0 20px rgba(144, 238, 144, 0.6),  /* light green */
+  0 0 40px rgba(144, 238, 144, 0.4),  /* softer, larger spread */
+  0 0 60px rgba(255, 255, 255, 0.3);  /* subtle white glow */
 
   border-radius: 16px;
-  box-shadow: 0 0 20px #3B82F6, 0 0 40px #8B5CF6;
+
   text-align: center;
   font-size: 1rem;
   line-height: 1.6;
@@ -213,6 +216,8 @@ h2 {
   color: #a0f;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px auto;   
+  margin-bottom: 10px auto;
 }
 
 .workflow-step {
@@ -222,13 +227,14 @@ h2 {
   opacity: 0;
   margin-bottom: 15px;
   padding: 12px 20px;
-  border-left: 6px solid #39FF14;
+  border-left: 6px solid #a0f;
   border-radius: 6px;
   font-weight: bold;
   color: #fff;
   background: linear-gradient(135deg, #1E293B, #334155);
   font-family: "Segoe UI", sans-serif;
   transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(139, 92, 246, 0.5), 0 0 60px rgba(255, 255, 255, 0.3);
   flex-wrap: wrap;
 }
 
